@@ -18,12 +18,12 @@ import com.o2.model.UserInfo;
 @Repository
 public class RegistrationDao {
 
-	@Autowired
-	private  MongoTemplate mongoTemplate;
+    @Autowired
+    private MongoTemplate mongoTemplate;
 
-	public void saveRegistrationData(UserInfo userInfo){
-		mongoTemplate.save(userInfo);
-	}
+    public void saveRegistrationData(UserInfo userInfo) {
+        mongoTemplate.save(userInfo);
+    }
 
 }
 
